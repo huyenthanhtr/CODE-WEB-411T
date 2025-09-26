@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Doc-Centric Copiers - Tran Thanh Huyen</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: Arial, sans-serif;
+  }
+
+
+  table {
+    width: 900px;               
+    border: 2px solid #000;     
+    border-collapse: collapse;  
+    margin: 20px auto;          
+  }
+
+  td {
+    border: 1px solid #000;     
+    padding: 0;
+    vertical-align: top;
+  }
+
+  .left {
+    width: 280px;
+    text-align: center;
+    background: #f5f5f5;
+    padding-top: 10px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 500px;           
+    border: none;
+    display: block;
+  }
+</style>
+</head>
+<body>
+<table>
+
+  <tr>
+    <td>
+      <img src="./images/DCCLogo.jpg" alt="Doc-Centric Copiers"></img>
+    </td>
+    <td rowspan="2">
+      <iframe name="content" src="WChart.html"></iframe>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td class="left">
+      <img src="./images/Map.jpg" usemap="#usa-map" alt="Map"></img>
+      <map name="usa-map">
+        <area href="WChart.html" target="content" coords="18,20,85,19,88,57,93,75,89,98,73,101,73,110,62,111,51,105,40,103,30,97,14,75,11,65,12,25" shape="poly">
+        <area href="MWChart.html" target="content" coords="86,21,121,20,135,23,147,27,154,31,165,45,166,53,172,58,163,70,154,68,149,74,141,78,122,79,94,78,87,55" shape="poly">
+        <area href="NEChart.html" target="content" coords="171,55,176,47,183,48,195,38,208,37,216,27,223,37,222,45,212,61,196,69,190,80,184,67,175,76,165,74,162,68" shape="poly">
+        <area href="SChart.html" target="content" coords="90,77,90,100,79,101,88,118,105,127,112,133,112,126,124,118,142,120,150,116,161,119,168,137,177,135,177,123,170,108,175,104,191,93,190,83,182,70,174,76,163,74,157,69,139,81" shape="poly">
+      </map>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
