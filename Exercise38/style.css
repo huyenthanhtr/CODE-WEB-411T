@@ -1,0 +1,45 @@
+/* Container dùng Flexbox để bố trí các mùa */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Định dạng chung cho thẻ p */
+.container p {
+  width: 45%;
+  height: 250px;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+/* Lớp cho tiêu đề */
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #00F;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Màu nền và chữ riêng cho từng mùa */
+#spring {
+  background-color: pink;
+  color: purple;
+}
+#summer {
+  background-color: orange;
+  color: maroon;
+}
+#autumn {
+  background-color: yellow;
+  color: darkgoldenrod;
+}
+#winter {
+  background-color: lightgray;
+  color: navy;
+}
