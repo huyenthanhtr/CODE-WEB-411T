@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #111;
+  line-height: 1.45;
+}
+
+.outer-wrap {
+  padding: 18px;
+}
+.inner-panel {
+  width: 760px;
+  margin: 0 auto;
+  border: 3px solid #193a82;
+  background: #ffffff;
+  padding: 10px;
+}
+
+/* header */
+.img-center {
+  text-align: center;
+}
+.kick {
+  width: 220px;
+  height: auto;
+  display: inline-block;
+}
+.title-block {
+  text-align: center;
+  margin-top: 8px;
+}
+.master {
+  font-family: "Brush Script MT", cursive;
+  color: #a48b3b;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+.big-title .tae, .big-title .kwon, .big-title .do {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.big-title .tae, .big-title .do { color: #e6e1d1; }
+.big-title .kwon { color: #b3a86f; }
+
+.header-sep {
+  border: 0;
+  border-top: 1px solid #999;
+  margin: 14px 0;
+}
+
+/* nội dung + ô vàng bên phải đoạn 1 */
+.first-block {
+  overflow: hidden; /* clear float */
+}
+.intro {
+  text-align: justify;
+  font-size: 14px;
+  text-indent: 1.2em;
+  margin-right: 240px; /* chừa chỗ cho box vàng */
+}
+.features {
+  float: right;
+  width: 220px;
+  background-color: rgb(193,175,72);
+  padding: 10px;
+  border: 1px solid #6b5d18;
+  font-weight: bold; /* toàn bộ in đậm */
+}
+.features ul {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+}
+.features li { margin-bottom: 6px; }
+
+.children {
+  text-align: justify;
+  font-size: 14px;
+  text-indent: 1.2em;
+  margin: 12px 0;
+}
+
+/* footer */
+.footer-sep {
+  border: 0;
+  border-top: 1px solid #222;
+  margin: 14px 0 8px 0;
+}
+.site-footer address {
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+}
