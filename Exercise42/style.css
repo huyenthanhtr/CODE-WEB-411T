@@ -1,0 +1,129 @@
+BODY {
+  color: green;
+  background: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container chính để cân chỉnh layout */
+.container {
+  width: 880px;               
+  margin: 15px auto;
+  background: rgba(255,255,255,0.95);
+  border: 1px solid #666;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+/* Header */
+#header .logo-wrap {
+  text-align: center;
+  padding: 6px 0;
+}
+#header .logo-wrap img {
+  max-width: 320px;
+  height: auto;
+  border: 3px solid #996633; 
+  background: #fff;
+  padding: 4px;
+}
+
+/* Top navigation */
+.topnav {
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  font-size: 0.95em;
+}
+.topnav a {
+  text-decoration: none;
+  color: blue;
+}
+.topnav a:hover {
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Tiêu đề */
+H1, H2, H3, H4, H5, H6 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: orange;
+  margin-top: 0.4em;
+}
+
+/* Trang chính: chia cột (left content + right .Article) */
+main {
+  overflow: hidden; /* chứa float */
+}
+
+/* Bên phải (the box yêu cầu) */
+DIV.Article {
+  padding: 0.5em;
+  border-style: solid;
+  border-width: 2px;
+  background-color: rgb(252,221,163);
+  width: 250px;
+  float: right;
+  margin-left: 12px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Nội dung chính bên trái */
+.article-text {
+  margin-right: 280px; /* để nhường chỗ cho box 250px + gap */
+  line-height: 1.45;
+}
+
+UL {
+  list-style-image: url('images/Apple.jpg');
+  list-style-position: outside;
+  margin-left: 1.2em;
+}
+UL B {
+  color: rgb(155,0,0);
+}
+
+/* Blockquote */
+BLOCKQUOTE {
+  background-color: silver;
+  text-align: center; 
+  margin: 1em auto;
+  width: 100%;
+  padding: 0.5em;
+}
+
+/* Anchor chung */
+A {
+  font-size: 0.9em;
+  color: green; 
+  text-decoration: none;
+}
+A:hover {
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Special {
+  color: rgb(153,102,6);
+  font-weight: bold;
+}
+
+ADDRESS {
+  font-size: 0.9em;
+  font-style: normal;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px solid #ccc;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
