@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fdf6e3;
+    color: #333;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    background-color: #f2a65a;
+    padding: 10px;
+}
+.header img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Weather */
+.weather {
+    text-align: center;
+    background-color: #f6d6ad;
+    padding: 10px;
+}
+.weather a {
+    display: block;
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 5px;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    margin: 15px;
+}
+
+/* Left content */
+.content {
+    flex: 3;
+    margin-right: 20px;
+}
+
+/* Right Sidebar */
+.sidebar {
+    flex: 1;
+    background-color: #bdf7b7;
+    padding: 15px;
+}
+.sidebar h3 {
+    margin-top: 0;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar li {
+    margin-bottom: 5px;
+}
+.sidebar a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 30px;
+}
+.section h2 {
+    color: darkred;
+}
+
+/* Festival Layout */
+.festival {
+    display: flex;
+}
+.festival .text {
+    flex: 3;
+}
+.festival .image {
+    flex: 1;
+    text-align: center;
+}
+.festival img {
+    width: 100%;
+    max-width: 200px;
+}
+.caption {
+    font-size: 12px;
+    font-style: italic;
+}
+
+/* MRIM Layout */
+.mrim {
+    display: flex;
+}
+.mrim .image {
+    flex: 1;
+    margin-right: 15px;
+}
+.mrim .image img {
+    width: 100%;
+    max-width: 200px;
+}
+.mrim .text {
+    flex: 3;
+}
