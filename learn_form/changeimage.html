@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Change image - Tran Thanh Huyen</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        function hide_image()
+        {
+            avatar=document.getElementById("avatar")
+            avatar.style="display:none"
+        }
+        function show_image()
+        {
+            document.getElementById("avatar").style="display:block"
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="radio" name="myimage" id="img1"/>
+        <label for="img1">Show Image</label>
+        <br/>
+        <input type="radio" name="myimage" id="img2" onchange="hide_image()"/>
+        <label for="img1">Hide Image</label>
+        <img src="images/redscarft_girl.jpg" name="avatar" id="avatar" style="display: block;"/>
+    </form>
+</body>
+</html>

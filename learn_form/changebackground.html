@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Change Background - Tran Thanh Huyen</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        function change_background(value)
+        {
+            mydiv=document.getElementById("mydiv")
+            mydiv.setAttribute("style", "width: 100%; height: 100px; background-color:" +value)
+        }
+    </script>
+</head>
+<body>
+    <h3> Change background color:</h3>
+    <select id="background" name="mybackground" onchange="change_background(this.value)">
+        <option value="blue">Màu xanh da trời</option>
+        <option value="red">Màu đỏ chóe</option>
+        <option value="yellow">Màu vàng khè</option>
+    </select>
+    <div style="width: 100%; height: 100px; background-color: pink;" id="mydiv" name="mydiv">
+
+    </div>
+</body>
+</html>
