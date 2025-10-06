@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Result - Tran Thanh Huyen</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .result-box {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      width: 450px;
+    }
+    h2 {
+      text-align: center;
+      color: teal;
+    }
+    p {
+      font-size: 16px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="result-box">
+    <h2>Order Summary</h2>
+    <p><strong>Mouse Total:</strong> <span id="mouse"></span></p>
+    <p><strong>Keyboard Total:</strong> <span id="keyboard"></span></p>
+    <p><strong>USB Total:</strong> <span id="usb"></span></p>
+    <p><strong>Grand Total:</strong> <span id="total"></span></p>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("mouse").textContent = params.get("total1");
+    document.getElementById("keyboard").textContent = params.get("total2");
+    document.getElementById("usb").textContent = params.get("total3");
+    document.getElementById("total").textContent = params.get("grand_total");
+  </script>
+</body>
+</html>
