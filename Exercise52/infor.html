@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Editorial Office</title>
+  <link rel="stylesheet" href="infor.css">
+</head>
+<body>
+  <form class="container">
+    <div class="form_input">
+      <label for="fullname">Full name:</label>
+      <input type="text" id="fullname" name="fullname">
+    </div>
+
+    <div class="form_input">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+    </div>
+
+    <div class="form_input">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title">
+    </div>
+
+    <div class="form_input">
+      <label for="content">Content:</label>
+      <textarea id="content" name="content"></textarea>
+    </div>
+
+    <div class="form_input">
+      <label for="department">Send to:</label>
+      <select id="department" name="department">
+        <option value="editorial">Editorial board</option>
+        <option value="news">News Department</option>
+        <option value="perspectives">Board of Perspectives</option>
+        <option value="world">World Board</option>
+        <option value="business">Business Department</option>
+      </select>
+    </div>
+
+    <div class="form_button">
+      <input type="submit" value="Send">
+    </div>
+  </form>
+</body>
+</html>
