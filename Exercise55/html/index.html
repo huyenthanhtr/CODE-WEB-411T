@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quadratic Equation Solver - Tran Thanh Huyen</title>
+    <script src="../js/mainjs.js" defer></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 30px;
+        }
+
+        fieldset {
+            max-width: 500px;
+            margin: auto;
+            background: #fff;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+
+        legend {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .button-group {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Quadratic Equation Solver</legend>
+            <table>
+                <tr>
+                    <td><label for="a">Coefficient a:</label></td>
+                    <td><input type="text" id="a" name="a" /></td>
+                </tr>
+                <tr>
+                    <td><label for="b">Coefficient b:</label></td>
+                    <td><input type="text" id="b" name="b" /></td>
+                </tr>
+                <tr>
+                    <td><label for="c">Coefficient c:</label></td>
+                    <td><input type="text" id="c" name="c" /></td>
+                </tr>
+                <tr>
+                    <td><label for="result">Result:</label></td>
+                    <td><textarea id="result" name="result" rows="3" readonly></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="button-group">
+                        <button type="button" onclick="solveQuadratic()">Find Solution</button>
+                        <button type="reset">Clear</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
