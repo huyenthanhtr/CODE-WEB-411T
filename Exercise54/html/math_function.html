@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Function - Tran Thanh Huyen</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        fieldset {
+            border: none;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+            border-radius: 8px;
+        }
+
+        legend {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: middle;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin: 5px;
+            padding: 8px 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        td[colspan="2"] {
+            text-align: center;
+        }
+    </style>
+    <script src="../js/math_function.js"></script>
+</head>
+<body>
+    <form name="math_form">
+        <fieldset>
+            <legend>Math Function</legend>
+            <table>
+                <tr>
+                    <td><label for="a">a:</label></td>
+                    <td><input id="a" type="text" name="a"/></td>
+                </tr>
+                <tr>
+                    <td><label for="b">b:</label></td>
+                    <td><input id="b" type="text" name="b"/></td>
+                </tr>
+                <tr>
+                    <td><label for="c">c:</label></td>
+                    <td><input id="c" type="text" name="c"/></td>
+                </tr>
+                <tr>
+                    <td><label for="result">Result:</label></td>
+                    <td><input id="result" type="text" name="result" readonly/></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" onclick="call_Max()">MAX</button>
+                        <button type="button" onclick="call_Min()">MIN</button>
+                        <button type="button" onclick="find_sin()">sin(a)</button>
+                        <button type="button" onclick="find_cos()">cos(a)</button>
+                        <button type="button" onclick="call_multiply()">a*b</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
