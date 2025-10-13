@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Exercise 56 - String Processing - Tran Thanh Huyen</title>
+    
+        <script>
+        function getInput() {
+            return document.getElementById("input_data").value;
+        }
+
+        function setResult(text) {
+            document.getElementById("result_data").value = text;
+        }
+
+        function enterData() {
+            setResult(getInput());
+        }
+
+        function countUppercase() {
+            const str = getInput();
+            const count = (str.match(/[A-Z]/g) || []).length;
+            setResult("Số ký tự viết hoa: " + count);
+        }
+
+        function displayUppercase() {
+            setResult(getInput().toUpperCase());
+        }
+
+        function displayLowercase() {
+            setResult(getInput().toLowerCase());
+        }
+
+        function countLowercase() {
+            const str = getInput();
+            const count = (str.match(/[a-z]/g) || []).length;
+            setResult("Số ký tự viết thường: " + count);
+        }
+
+        function oneWordPerLine() {
+            const words = getInput().trim().split(/\s+/);
+            setResult(words.join("\n"));
+        }
+
+        function wordCount() {
+            const words = getInput().trim().split(/\s+/);
+            const count = words.filter(w => w !== "").length;
+            setResult("Số từ: " + count);
+        }
+
+        function printVowelsConsonants() {
+            const str = getInput().toLowerCase();
+            const vowels = str.match(/[aeiou]/g) || [];
+            const consonants = str.match(/[a-z]/g)?.filter(c => !"aeiou".includes(c)) || [];
+            setResult("Nguyên âm: " + vowels.join(", ") + "\nPhụ âm: " + consonants.join(", "));
+        }
+    </script>
+
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .box {
+            flex: 1;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+        }
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        button {
+            padding: 8px 12px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h2></h2>Using String Processing functions- Tran Thanh Huyen</h2>
+
+    <div class="container">
+        <div class="box">
+            <h3>Input Data:</h3>
+            <textarea id="input_data">Hello World! This is a Test.</textarea>
+        </div>
+        <div class="box">
+            <h3>Result:</h3>
+            <textarea id="result_data" readonly></textarea>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="enterData()">Enter Data</button>
+        <button onclick="countUppercase()">Count Uppercase Characters</button>
+        <button onclick="displayUppercase()">Uppercase Display</button>
+        <button onclick="oneWordPerLine()">Output One Word Per Line</button>
+        <button onclick="displayLowercase()">Lowercase Display</button>
+        <button onclick="wordCount()">Word Count</button>
+        <button onclick="countLowercase()">Count Lowercase Characters</button>
+        <button onclick="printVowelsConsonants()">Print Vowels & Consonants</button>
+    </div>
+
+    <p style="margin-top: 20px;">
+        🔗 <a href="https://www.w3.org/">W3C's String Processing Website</a>
+    </p>
+</body>
+</html>
