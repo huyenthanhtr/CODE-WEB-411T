@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Optimization - Tran Thanh Huyen</title>
+    <script>
+        function optimizeName(raw) {
+            // Chuyển về chữ thường
+            raw = raw.toLowerCase();
+
+            // Loại bỏ ký tự lặp lại quá 2 lần (ví dụ: "aaaaa" → "aa")
+            raw = raw.replace(/(\w)\1{2,}/g, '$1');
+
+            // Loại bỏ khoảng trắng dư thừa
+            raw = raw.replace(/\s+/g, ' ').trim();
+
+            // Viết hoa chữ cái đầu mỗi từ
+            const words = raw.split(' ');
+            const formatted = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+            return formatted;
+        }
+
+        function processOptimization() {
+            const input = document.getElementById("name_input").value;
+            const result = optimizeName(input);
+            document.getElementById("name_output").innerText = result;
+        }
+    </script>
+</head>
+<body>
+    <h2>Chuẩn hóa tên</h2>
+    <form>
+        <table>
+            <tr>
+                <td>Nhập tên:</td>
+                <td><input type="text" id="name_input" oninput="processOptimization()" placeholder="Ví dụ: hàaaaaa anhhhhh"></td>
+            </tr>
+            <tr>
+                <td>Tên chuẩn:</td>
+                <td id="name_output" style="font-weight: bold;"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

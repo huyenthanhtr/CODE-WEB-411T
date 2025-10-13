@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Learn For - Tran Thanh Huyen</title>
+        <script type="text/javascript">
+            function draw_p()
+            {
+                mydiv=document.getElementById("mydiv")
+                mydiv.innerHTML=""
+                for (i=0;i<100;i++)
+                {
+                    v=Math.floor(Math.random()*500)
+                    p="<p>"+v+"</p>"
+                    mydiv.innerHTML+=p
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Learn For</h1>
+        <div id="mydiv" style="background-color: blueviolet;height: 300px; overflow-y: scroll;" onclick="draw_p();">
+
+        </div>
+    </body>
+</html>

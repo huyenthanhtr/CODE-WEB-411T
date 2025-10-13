@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script>
+var p_items = {
+    id: "001",
+    Name: "Coca",
+    price: 12000,
+    Quantity: 10,
+    Image: "cocazero.jpg",
+    Value:function()
+    {
+        return this.price*this.Quantity;
+    }
+};
+</script>
+</head>
+<body>
+<form name="my_form">
+    <table>
+        <tr>
+            <td>ID</td>
+            <td><input id="td_id" type="text" name="id"></td>
+        </tr>
+        <tr>
+            <td>NAME</td>
+            <td><input id="td_name" type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>PRICE</td>
+            <td><input id="td_price" type="text" name="price"></td>
+        </tr>
+        <tr>
+            <td>QUANTITY</td>
+            <td><input id="td_quantity" type="text" name="quantity"></td>
+        </tr>
+        <tr>
+            <td>VALUE</td>
+            <td><input id="td_value" type="text" name="value"></td>
+        </tr>
+        <tr>
+            <td>IMAGE</td>
+            <td><input id="td_image" type="text" name="image"> <img id="img_product" width="100"></td>
+        </tr>
+    </table>
+</form>
+<script type="text/javascript">
+    td_id.value = p_items.id;
+    td_name.value = p_items.Name;
+    td_price.value = p_items.price;
+    td_quantity.value = p_items.Quantity;
+    td_value.value = p_items.Value();
+    td_image.value = p_items.Image;   // Gán tên file ảnh vào ô IMAGE
+    img_product.src = "../images/" +p_items.Image;
+
+</script>
+</body>
+</html>
